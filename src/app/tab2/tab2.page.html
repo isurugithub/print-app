@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Print
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button color="primary" style="margin-top: 50%;" expand="block" shape="round"  (click)="checkPrinterAvailability()">
+    <!-- <ion-icon slot="start" name="print"></ion-icon> -->
+    Connect
+  </ion-button>
+  <ion-col size="12"
+    style="color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;"
+  >
+    <div class="ion-text-center">
+      Device Name
+    </div>
+  </ion-col>
+  <ion-button color="warning" style="margin-top: 10px;" expand="block" (click)="printHtml()">
+    <!-- <ion-icon slot="start" name="print"></ion-icon> -->
+    Print HTML
+  </ion-button>
+  <ion-button color="dark" expand="block" (click)="printText()">
+    <!-- <ion-icon slot="start" name="print"></ion-icon> -->
+    Print Text
+  </ion-button>
+  <!-- <ion-button color="warning" expand="block">
+    Print PDF
+  </ion-button>
+  <ion-button color="tertiary" expand="block">
+    Print WebView
+  </ion-button> -->
+  
+</ion-content>
